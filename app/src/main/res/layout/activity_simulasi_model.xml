@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SimulasiModelActivity"
+    android:background="@drawable/bg">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:hint="Age ( 17 - 383 )"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:hint="Gender ( 1 - 5 )"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/ethnicity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:hint="ethnicity ( 1 - 5 )"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/jundice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:hint="Jundice ( 0 No - 1 Yes )"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/austim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:hint="Austim ( 0 No - 1 Yes )"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/contry_of_res"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:hint="Contry of res ( 1 - 5 )"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/used_app_before"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:hint="Used app before ( 0 No - 1 Yes )"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:hint="Result ( 1 - 1 )"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/age_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:hint="Agedesc ( 1 - 5  )"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/relation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:hint="Relation ( 1 - 5 )"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"/>
+
+            <Button
+                android:id="@+id/btnCheck"
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Predict"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/txtResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
